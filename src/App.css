@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.3s all ease-in-out;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html,
+body {
+  overflow-x: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#logo_svg .fil6 {
+  fill: none;
+  fill-rule: nonzero;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#logo_svg .fil1 {
+  fill: #fefefe;
 }
 
-.App-link {
-  color: #61dafb;
+#logo_svg .fil4 {
+  fill: #fefefe;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#logo_svg .fil2 {
+  fill: #fefefe;
+  fill-rule: nonzero;
+}
+
+#logo_svg .fil0 {
+  fill: #fefefe;
+  fill-rule: nonzero;
+}
+
+#logo_svg .fil5 {
+  fill: url(#id1);
+}
+
+#logo_svg .fil3 {
+  fill: url(#id2);
+}
+
+h1{
+  font-size: 30px;
+}
+
+:root{
+  --primary-white: "#FEFEFE";
+  --primary-dark-blue: "#384490";
+  --primary-light-blue: "#394C9B";
+  --primary-yellow: "#FECD29";
+  --primary-orange: "#EB8136";
+  --primary-green: "#009954";
 }
