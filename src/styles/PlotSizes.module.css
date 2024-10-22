@@ -1,0 +1,93 @@
+:root {
+  --primary-white: "#FEFEFE";
+  --primary-dark-blue: "#384490";
+  --primary-light-blue: "#394C9B";
+  --primary-yellow: "#FECD29";
+  --primary-orange: "#EB8136";
+  --primary-green: "#009954";
+}
+
+.primeLocation {
+  width: 1440px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  margin: auto;
+  padding: 150px 0px;
+}
+
+.imageSection {
+  width: 48%;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  order: 2;
+}
+
+.imageSection div {
+  width: 49%;
+}
+
+.imageSection div img {
+  width: 100%;
+  height: 300px;
+}
+
+.imageSection div img:last-of-type {
+  margin-top: 8px;
+  margin-bottom: -6px;
+}
+
+.bigImage {
+  width: 100%;
+}
+
+.contentSection {
+  width: 48%;
+  order: 1;
+}
+
+.contentSection h4 {
+  display: inline;
+  padding-bottom: 5px;
+  color: #384490;
+  border-bottom: 3px solid #eb8136;
+  margin-bottom: 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.contentSection h1 {
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-size: 44px;
+}
+
+.aboutDesc {
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.flexContent {
+  margin-top: 40px;
+}
+
+.flexContent div {
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #EB8136;
+}
+
+.flexContent div:last-of-type {
+  border-bottom: none;
+}
+
+.flexContent h3 {
+  color: #384490;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.primeLocation button{
+    margin-top: 0px;
+}

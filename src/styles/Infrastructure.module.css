@@ -1,0 +1,112 @@
+:root {
+  --primary-white: "#FEFEFE";
+  --primary-dark-blue: "#384490";
+  --primary-light-blue: "#394C9B";
+  --primary-yellow: "#FECD29";
+  --primary-orange: "#EB8136";
+  --primary-green: "#009954";
+}
+
+.primeLocation {
+  width: 1440px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  margin: auto;
+  padding: 150px 0px;
+}
+
+.primeLocationBlue {
+  background-color: #384490;
+}
+
+.imageSection {
+  width: 48%;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  order: 1;
+}
+
+.imageSection div {
+  width: 49%;
+}
+
+.imageSection div img {
+  width: 100%;
+  height: 300px;
+}
+
+.imageSection div img:last-of-type {
+  margin-top: 8px;
+  margin-bottom: -6px;
+}
+
+.bigImage {
+  width: 100%;
+}
+
+.contentSection {
+  width: 48%;
+  order: 2;
+}
+
+.contentSection * {
+  color: white;
+}
+
+.contentSection h4 {
+  display: inline;
+  padding-bottom: 5px;
+  color: #fecd29;
+  border-bottom: 3px solid #eb8136;
+  margin-bottom: 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.contentSection h1 {
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-size: 44px;
+}
+
+.aboutDesc {
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.flexContent {
+  overflow-x: scroll;
+  margin-top: 40px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  row-gap: 30px;
+  text-align: center;
+  cursor: grab;
+  user-select: none;
+}
+
+.flexContent::-webkit-scrollbar {
+  display: none;
+}
+
+.flexContent div {
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  flex-shrink: 0;
+  width: 200px;
+}
+
+.flexContent div img {
+  width: 95%;
+  height: 250px;
+  margin: auto;
+}
+
+.flexContent p {
+  color: #fefefe;
+  font-size: 13px;
+  margin-top: 2px;
+}

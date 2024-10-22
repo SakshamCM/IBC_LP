@@ -1,13 +1,26 @@
+import About from "../components/About";
+import Banner from "../components/Banner";
 import Footer from "../components/Footer";
+import Infrastructure from "../components/Infrastructure";
+import InPunjab from "../components/InPunjab";
 import Navbar from "../components/Navbar";
+import PlotSizes from "../components/PlotSizes";
+import PrimeLocation from "../components/PrimeLocation";
+import Surroundings from "../components/Surroundings";
+import WhyChooseUs from "../components/WhyChooseUs";
 
 let Homepage = () => {
   return (
     <>
       <Navbar />
-      <div>
-        <h1>This is the homepage.</h1>
-      </div>
+      <Banner />
+      <About />
+      <PrimeLocation />
+      <WhyChooseUs />
+      <Surroundings />
+      <PlotSizes />
+      <Infrastructure />
+      <InPunjab />
       <Footer />
     </>
   );

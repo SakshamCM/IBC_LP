@@ -9,10 +9,14 @@ let Navbar = () => {
         <img src={logo} />
       </div>
       <div className={styles.optionsDiv}>
-        <Link to="about">About</Link>
-        <Link to="services">Services</Link>
-        <Link to="portfolio">Portfolio</Link>
-        <Link to="contact">Contact</Link>
+        <Link to="#about">About</Link>
+        <Link to="#prime-location">Prime Location</Link>
+        <Link to="#why-choose-ibc">Why Choose IBC</Link>
+        <Link to="#surroundings">Surroundings</Link>
+        <Link to="#plot-sizes">Plot Sizes</Link>
+        <Link to="#infrastructure">Infrastructure</Link>
+        <Link to="#in-punjab">In Punjab</Link>
+        <Link to="#contact">Contact</Link>
       </div>
     </div>
   );

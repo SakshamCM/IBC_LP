@@ -1,0 +1,76 @@
+:root {
+  --primary-white: "#FEFEFE";
+  --primary-dark-blue: "#384490";
+  --primary-light-blue: "#394C9B";
+  --primary-yellow: "#FECD29";
+  --primary-orange: "#EB8136";
+  --primary-green: "#009954";
+}
+
+.whyChooseUs {
+  width: 1440px;
+  margin: auto;
+  padding: 150px 0px;
+  text-align: center;
+}
+
+.whyChooseUs h1 {
+  margin-bottom: 20px;
+  margin-top: 30px;
+  font-size: 44px;
+}
+
+.whyChooseUs .whyChooseShortHeading {
+  display: inline;
+  padding-bottom: 5px;
+  color: #384490;
+  border-bottom: 3px solid #eb8136;
+  margin-bottom: 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.smallDesc {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.whyChooseUsGrid {
+  display: grid;
+  align-items: stretch;
+  justify-content: space-between;
+  grid-template-columns: repeat(3, 30%);
+}
+
+.whyChooseUsGrid div {
+  width: 100%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 40px 20px 40px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.whyChooseUsGrid div img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 15px;
+  border: 1px solid black;
+}
+
+.whyChooseUsGrid div h4 {
+  margin-bottom: 5px;
+  font-weight: 800;
+  font-size: 22px;
+  color: #384490;
+}
+
+.whyChooseUsGrid div p {
+  font-size: 14px;
+  width: 80%;
+  margin: auto;
+}
+
+.whyChooseUs button {
+  margin-top: 50px;
+}

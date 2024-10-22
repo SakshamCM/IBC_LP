@@ -1,0 +1,92 @@
+:root {
+  --primary-white: "#FEFEFE";
+  --primary-dark-blue: "#384490";
+  --primary-light-blue: "#394C9B";
+  --primary-yellow: "#FECD29";
+  --primary-orange: "#EB8136";
+  --primary-green: "#009954";
+}
+
+.surroundings {
+  width: 1440px;
+  margin: auto;
+  padding: 150px 0px;
+  text-align: center;
+}
+
+.surroundingsBlue {
+  background-color: #384490;
+}
+
+.surroundings h4 {
+  display: inline-block;
+  margin: auto;
+  padding-bottom: 5px;
+  color: #fecd29;
+  border-bottom: 3px solid #eb8136;
+  margin-bottom: 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.surroundings h1 {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 44px;
+  color: white;
+}
+
+.surroundingsPara {
+  width: 80%;
+  margin: auto;
+  color: white;
+  font-size: 14px;
+}
+
+.surroundingsGridSection {
+  display: flex;
+  justify-content: center;
+  row-gap: 50px;
+  margin-top: 100px;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.surroundingsGridSection div {
+  width: 250px;
+  margin: 0px 20px;
+  color: white;
+  flex-shrink: 0;
+}
+
+.surroundingsGridSection div {
+  margin: 0px 20px;
+}
+
+.surroundingsGridSection div:nth-child(odd) {
+  margin-top: 50px;
+}
+
+.surroundingsGridSection div:nth-last-child(2):nth-child(odd) {
+  margin-top: 0;
+}
+
+.surroundingsGridSection div img {
+  width: 60px;
+  height: 60px;
+  border: 1px solid white;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.surroundingsGridSection p {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  font-size: 14px;
+}
+
+.surroundingsGridSection p strong {
+  color: #fecd29;
+  font-size: 20px;
+}
