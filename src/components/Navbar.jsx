@@ -21,7 +21,7 @@ let Navbar = () => {
           <a href="#surroundings">Surroundings</a>
           <a href="#plot-sizes">Plot Sizes</a>
           <a href="#infrastructure">Infrastructure</a>
-          <a href="#in-punjab">In Punjab</a>
+          <a href="#in-punjab">IBC Punjab</a>
           <a href="#contact">Contact</a>
         </div>
       </div>
@@ -82,7 +82,7 @@ let Navbar = () => {
               Infrastructure
             </a>
             <a href="#in-punjab" onClick={() => setShowMenu(false)}>
-              In Punjab
+              IBC Punjab
             </a>
             <a href="#contact" onClick={() => setShowMenu(false)}>
               Contact

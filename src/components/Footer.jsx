@@ -30,7 +30,7 @@ let Footer = () => {
           <a href="#surroundings">Surroundings</a>
           <a href="#plot-sizes">Plot Sizes</a>
           <a href="#infrastructure">Infrastructure</a>
-          <a href="#in-punjab">In Punjab</a>
+          <a href="#in-punjab">IBC Punjab</a>
           <a href="#contact">Contact</a>
         </div>
         <div className={styles.footerContact}>
