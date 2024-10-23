@@ -1,5 +1,6 @@
 import About from "../components/About";
 import Banner from "../components/Banner";
+import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import Infrastructure from "../components/Infrastructure";
 import InPunjab from "../components/InPunjab";
@@ -21,6 +22,7 @@ let Homepage = () => {
       <PlotSizes />
       <Infrastructure />
       <InPunjab />
+      <Contact />
       <Footer />
     </>
   );

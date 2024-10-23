@@ -21,6 +21,20 @@
   display: flex;
   align-items: stretch;
   justify-content: space-between;
+  position: relative;
+  top: 100px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.showAnimationSection {
+  top: 0;
+  opacity: 1;
+  visibility: visible;
+}
+
+.animationSection:last-child {
+  transition-delay: 0.2s;
 }
 
 .imageSection div {
@@ -43,6 +57,16 @@
 
 .contentSection {
   width: 48%;
+  position: relative;
+  top: 100px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.contentSection.showAnimationSection {
+  top: 0;
+  opacity: 1;
+  visibility: visible;
 }
 
 .contentSection h4 {
@@ -87,4 +111,103 @@
 .flexContent div p {
   text-align: left;
   width: 100%;
+}
+
+@media all and (max-width: 1500px) {
+  .about {
+    width: 1360px;
+  }
+}
+
+@media all and (max-width: 1400px) {
+  .about {
+    width: 1240px;
+  }
+}
+
+@media all and (max-width: 1300px) {
+  .about {
+    width: 1190px;
+  }
+}
+
+@media all and (max-width: 1240px) {
+  .about {
+    width: 1000px;
+  }
+}
+
+@media all and (max-width: 1050px) {
+  .about {
+    width: 95%;
+    flex-direction: column;
+    row-gap: 50px;
+  }
+
+  .imageSection {
+    width: 100%;
+    order: 2;
+  }
+
+  .contentSection {
+    width: 100%;
+    order: 1;
+    text-align: center;
+  }
+
+  .imageSection div img {
+    width: 100%;
+    height: 351px;
+  }
+
+  .yellowLine {
+    width: 70%;
+  }
+
+  .flexContent div p {
+    text-align: left !important;
+    width: 30%;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .contentSection h1 {
+    font-size: 30px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .about {
+    padding: 70px 0px 100px;
+  }
+
+  .contentSection h1 {
+    font-size: 25px;
+  }
+
+  .imageSection div img {
+    width: 100%;
+    height: 250px;
+  }
+
+  .yellowLine {
+    width: 40%;
+  }
+
+  .flexContent div p {
+    text-align: left !important;
+    width: 60%;
+  }
+}
+
+@media all and (max-width: 450px) {
+  .imageSection div img {
+    width: 100%;
+    height: 170px;
+  }
+
+  .imageSection div img:last-of-type {
+    margin-top: 2px;
+    margin-bottom: -6px;
+  }
 }

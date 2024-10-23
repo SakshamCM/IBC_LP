@@ -22,6 +22,17 @@
   align-items: stretch;
   justify-content: space-between;
   order: 2;
+  position: relative;
+  top: 100px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.imageSection.animationSection {
+  transition-delay: 0.4s;
+  top: 0;
+  opacity: 1;
+  visibility: visible;
 }
 
 .imageSection div {
@@ -40,11 +51,23 @@
 
 .bigImage {
   width: 100%;
+  object-fit: contain;
 }
 
 .contentSection {
   width: 48%;
   order: 1;
+  position: relative;
+  top: 100px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.contentSection.animationSection {
+  transition-delay: 0.4s;
+  top: 0;
+  opacity: 1;
+  visibility: visible;
 }
 
 .contentSection h4 {
@@ -75,7 +98,7 @@
 .flexContent div {
   padding-bottom: 10px;
   margin-bottom: 30px;
-  border-bottom: 2px solid #EB8136;
+  border-bottom: 2px solid #eb8136;
 }
 
 .flexContent div:last-of-type {
@@ -88,6 +111,65 @@
   font-size: 22px;
 }
 
-.primeLocation button{
-    margin-top: 0px;
+.primeLocation button {
+  margin-top: 0px;
+}
+
+@media all and (max-width: 1500px) {
+  .primeLocation {
+    width: 1360px;
+  }
+}
+
+@media all and (max-width: 1400px) {
+  .primeLocation {
+    width: 1240px;
+  }
+}
+
+@media all and (max-width: 1300px) {
+  .primeLocation {
+    width: 1190px;
+  }
+}
+
+@media all and (max-width: 1240px) {
+  .primeLocation {
+    width: 1000px;
+  }
+}
+
+@media all and (max-width: 1050px){
+  .primeLocation {
+    width: 95%;
+    flex-direction: column;
+    row-gap: 50px;
+  }
+
+  .imageSection {
+    width: 100%;
+    order: 2;
+  }
+  
+  .contentSection {
+    width: 100%;
+    order: 1;
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .primeLocation h1 {
+    font-size: 30px;
+  }
+}
+
+@media all and (max-width: 500px){
+  .contentSection h1 {
+    font-size: 25px;
+  }
+
+  .primeLocation {
+    padding: 70px 0px;
+  }
 }

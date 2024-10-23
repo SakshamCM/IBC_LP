@@ -24,11 +24,14 @@ let Footer = () => {
 
         <div className={styles.footerLinks}>
           <h3>Quick Links</h3>
-          <a href="#1">Link 1</a>
-          <a href="#2">Link 2</a>
-          <a href="#3">Link 3</a>
-          <a href="#4">Link 4</a>
-          <a href="#5">Link 5</a>
+          <a href="#about">About</a>
+          <a href="#prime-location">Prime Location</a>
+          <a href="#why-choose-ibc">Why Choose IBC</a>
+          <a href="#surroundings">Surroundings</a>
+          <a href="#plot-sizes">Plot Sizes</a>
+          <a href="#infrastructure">Infrastructure</a>
+          <a href="#in-punjab">In Punjab</a>
+          <a href="#contact">Contact</a>
         </div>
         <div className={styles.footerContact}>
           <h3>Contact Us</h3>

@@ -18,6 +18,17 @@
   margin-bottom: 20px;
   margin-top: 30px;
   font-size: 44px;
+  position: relative;
+  top: 100px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.whyChooseUs h1.showAnimationSection {
+  transition-delay: 0.4s;
+  top: 0;
+  opacity: 1;
+  visibility: visible;
 }
 
 .whyChooseUs .whyChooseShortHeading {
@@ -28,12 +39,34 @@
   margin-bottom: 20px;
   font-size: 16px;
   text-transform: uppercase;
+  position: relative;
+  top: 100px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.whyChooseUs .whyChooseShortHeading.showAnimationSection {
+  transition-delay: 0.2s;
+  top: 0;
+  opacity: 1;
+  visibility: visible;
 }
 
 .smallDesc {
   width: 70%;
   margin: auto;
   margin-bottom: 50px;
+  position: relative;
+  top: 100px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.smallDesc.showAnimationSection {
+  transition-delay: 0.6s;
+  top: 0;
+  opacity: 1;
+  visibility: visible;
 }
 
 .whyChooseUsGrid {
@@ -49,13 +82,51 @@
   padding: 40px 20px 40px;
   border-radius: 15px;
   text-align: center;
+  position: relative;
+  top: 100px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.button {
+  position: relative;
+  top: 100px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.whyChooseGridDiv:first-of-type.showAnimationSection {
+  transition-delay: 0.8s;
+  top: 0;
+  opacity: 1;
+  visibility: visible;
+}
+
+.whyChooseGridDiv:nth-of-type(2).showAnimationSection {
+  transition-delay: 1s;
+  top: 0;
+  opacity: 1;
+  visibility: visible;
+}
+
+.whyChooseGridDiv:last-of-type.showAnimationSection {
+  transition-delay: 1.2s;
+  top: 0;
+  opacity: 1;
+  visibility: visible;
+}
+
+.button.showAnimationSection {
+  transition-delay: 1.4s;
+  top: 0;
+  opacity: 1;
+  visibility: visible;
 }
 
 .whyChooseUsGrid div img {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   margin-bottom: 15px;
-  border: 1px solid black;
 }
 
 .whyChooseUsGrid div h4 {
@@ -73,4 +144,70 @@
 
 .whyChooseUs button {
   margin-top: 50px;
+}
+
+@media all and (max-width: 1500px) {
+  .whyChooseUs {
+    width: 1360px;
+  }
+}
+
+@media all and (max-width: 1400px) {
+  .whyChooseUs {
+    width: 1240px;
+  }
+}
+
+@media all and (max-width: 1300px) {
+  .whyChooseUs {
+    width: 1190px;
+  }
+}
+
+@media all and (max-width: 1240px) {
+  .whyChooseUs {
+    width: 1000px;
+  }
+}
+
+@media all and (max-width: 1050px) {
+  .whyChooseUs {
+    width: 95%;
+    flex-direction: column;
+    row-gap: 50px;
+  }
+
+  .imageSection {
+    width: 100%;
+    order: 2;
+  }
+
+  .whyChooseUsGrid {
+    grid-template-columns: repeat(3, 33%);
+  }
+}
+
+@media all and (max-width: 767px) {
+  .whyChooseUs h1 {
+    font-size: 30px;
+  }
+
+  .whyChooseUsGrid {
+    grid-template-columns: repeat(1, 100%);
+    row-gap: 20px;
+  }
+}
+
+@media all and (max-width: 500px){
+  .whyChooseUs{
+    padding: 70px 0px;
+  }
+  
+  .whyChooseUs h1 {
+    font-size: 25px;
+  }
+
+  .whyChooseUs p{
+    width: 100%;
+  }
 }

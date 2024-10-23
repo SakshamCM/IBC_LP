@@ -26,6 +26,20 @@
   align-items: stretch;
   justify-content: space-between;
   order: 2;
+  position: relative;
+  top: 100px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.showAnimationSection {
+  top: 0;
+  opacity: 1;
+  visibility: visible;
+}
+
+.animationSection:last-child {
+  transition-delay: 0.2s;
 }
 
 .imageSection div {
@@ -34,7 +48,7 @@
 
 .imageSection div img {
   width: 100%;
-  height: 300px;
+  height: auto;
 }
 
 .imageSection div img:last-of-type {
@@ -49,6 +63,16 @@
 .contentSection {
   width: 48%;
   order: 1;
+  position: relative;
+  top: 100px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.contentSection.showAnimationSection {
+  top: 0;
+  opacity: 1;
+  visibility: visible;
 }
 
 .contentSection * {
@@ -100,4 +124,72 @@
   color: #fefefe;
   font-size: 13px;
   margin-top: 2px;
+}
+
+@media all and (max-width: 1500px) {
+  .primeLocation {
+    width: 1360px;
+  }
+}
+
+@media all and (max-width: 1400px) {
+  .primeLocation {
+    width: 1240px;
+  }
+}
+
+@media all and (max-width: 1300px) {
+  .primeLocation {
+    width: 1190px;
+  }
+}
+
+@media all and (max-width: 1240px) {
+  .primeLocation {
+    width: 1000px;
+  }
+}
+
+@media all and (max-width: 1050px){
+  .primeLocation {
+    width: 95%;
+    flex-direction: column;
+    row-gap: 50px;
+  }
+
+  .imageSection {
+    width: 100%;
+    order: 2;
+  }
+  
+  .contentSection {
+    width: 100%;
+    order: 1;
+    text-align: center;
+  }
+
+  .imageSection div img {
+    width: 100%;
+    height: 351px;
+  }
+
+  .flexContent{
+    margin-top: 50px;
+  }
+}
+
+@media all and (max-width: 767px){
+  .contentSection h1 {
+    font-size: 30px;
+  }
+}
+
+@media all and (max-width: 500px){
+  .contentSection h1 {
+    font-size: 25px;
+  }
+
+  .primeLocation{
+    padding: 70px 0px;
+  }
 }
