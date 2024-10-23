@@ -28,7 +28,7 @@ let Footer = () => {
           <a href="#prime-location">Prime Location</a>
           <a href="#why-choose-ibc">Why Choose IBC</a>
           <a href="#surroundings">Surroundings</a>
-          <a href="#plot-sizes">Plot Sizes</a>
+          <a href="#plot-sizes">Area Division</a>
           <a href="#infrastructure">Infrastructure</a>
           <a href="#in-punjab">IBC Punjab</a>
           <a href="#contact">Contact</a>
