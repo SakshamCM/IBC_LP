@@ -54,9 +54,10 @@ let PlotSizes = () => {
               your space as your business grows
             </p>
             <p className={styles.aboutDesc}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-              odio deleniti adipisci accusantium perferendis minima itaque quod
-              aliquam impedit totam?
+              The flexible and scalable plot sizes accommodate diverse needs,
+              enabling businesses to customize their spaces for optimal growth
+              and development while ensuring efficient land use and
+              accessibility.
             </p>
             <div className={styles.flexContent}>
               <div>

@@ -1,7 +1,7 @@
 .banner {
   width: 100%;
   margin-top: -100px;
-  padding: 200px 0px;
+  padding: 150px 0px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,6 +9,22 @@
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: cover;
+  position: relative;
+  z-index: 10;
+}
+
+.bannerContentSection button {
+  background-color: white;
+  color: #384490;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.bannerContentSection button:hover {
+  background-color: #384490;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
 }
 
 .bannerMain {
@@ -25,6 +41,17 @@
   justify-content: center;
   row-gap: 10px;
   flex-direction: column;
+  position: relative;
+  top: 100px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.bannerContentSection.showAnimationSection {
+  transition-delay: 0.2s;
+  top: 0;
+  opacity: 1;
+  visibility: visible;
 }
 
 .bannerContentSection * {
@@ -32,12 +59,20 @@
 }
 
 .bannerContentSection h1 {
-  font-size: 44px;
+  font-size: 35x;
   letter-spacing: 1px;
+  line-height: 0.8;
+}
+
+.bannerContentSection h1 span {
+  font-weight: 800;
+  color: #fecd29;
+  font-size: 55px;
 }
 
 .bannerContentSection p {
   margin-top: 30px;
+  font-size: 15px;
 }
 
 .bannerFormSection {
@@ -62,7 +97,7 @@
 }
 
 .bannerFormSection.showAnimationSection {
-  transition-delay: 0.2s;
+  transition-delay: 0.4s;
   top: 0;
   opacity: 1;
   visibility: visible;
@@ -135,12 +170,36 @@
   margin: auto;
   background-color: #384490;
   border-radius: 5px;
-  border: none;
+  border: 2px solid white;
   cursor: pointer;
   padding: 10px 50px;
   font-size: 16px;
   color: white;
   font-weight: 600;
+  /* animation: borderMove 2s linear infinite; */
+}
+
+@keyframes borderMove {
+  0% {
+    border-color: white;
+    box-shadow: 0 0 0 2px rgb(42, 153, 124);
+  }
+  25% {
+    border-color: transparent;
+    box-shadow: 2px 0 0 0 rgb(42, 153, 124);
+  }
+  50% {
+    border-color: transparent;
+    box-shadow: 2px 2px 0 0 rgb(42, 153, 124);
+  }
+  75% {
+    border-color: transparent;
+    box-shadow: 0 2px 0 0 rgb(42, 153, 124);
+  }
+  100% {
+    border-color: transparent;
+    box-shadow: 0 0 0 2px rgb(42, 153, 124);
+  }
 }
 
 .bannerFormSection h3 {

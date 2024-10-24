@@ -5,11 +5,11 @@
   align-items: center;
   justify-content: space-between;
   padding: 30px 0px 20px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.156);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.628);
   position: sticky;
   top: 0px;
   left: 0;
-  z-index: 10;
+  z-index: 11;
 }
 
 .logoDiv img {
@@ -27,7 +27,13 @@
 .optionsDiv a {
   color: white;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 15px;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -5px;
+}
+
+.optionsDiv a:hover {
+  border-bottom: 2px solid white;
 }
 
 .smallNavbar {
@@ -40,7 +46,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 12;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -48,7 +54,7 @@
   visibility: hidden;
 }
 
-.showHamburger{
+.showHamburger {
   opacity: 1;
   visibility: visible;
 }
@@ -67,7 +73,7 @@
   margin-right: -350px;
 }
 
-.showMenuContent{
+.showMenuContent {
   margin-right: 0px;
 }
 
@@ -158,6 +164,10 @@
     padding: 18px 2.5%;
     margin: auto;
     background-color: #384490;
+    position: sticky;
+    top: 0px;
+    left: 0;
+    z-index: 12;
   }
 
   .hamburger {

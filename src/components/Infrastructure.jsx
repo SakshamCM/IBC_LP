@@ -80,9 +80,10 @@ let Infrastructure = () => {
               operations.
             </p>
             <p className={styles.aboutDesc}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-              odio deleniti adipisci accusantium perferendis minima itaque quod
-              aliquam impedit totam?
+              IBC's smart infrastructure prioritizes efficiency and
+              sustainability, featuring advanced facilities that empower
+              innovative business operations while minimizing environmental
+              impact and maximizing productivity.
             </p>
             <div className={styles.flexContent} ref={scrollContainerRef}>
               <div>
@@ -104,11 +105,12 @@ let Infrastructure = () => {
             </div>
             <div className={styles.navigationButtons}>
               <button className={styles.arrow} onClick={scrollLeft}>
-                ←
+                {"<"}
               </button>
               <button className={styles.arrow} onClick={scrollRight}>
-                →
+                {">"}
               </button>
+              {/* → ←  */}
             </div>
           </div>
         </div>

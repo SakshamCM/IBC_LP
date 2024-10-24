@@ -13,11 +13,13 @@
   align-items: stretch;
   justify-content: space-between;
   margin: auto;
-  padding: 150px 0px;
+  padding: 80px 0px;
 }
 
 .primeLocationBlue {
   background-color: #384490;
+  position: relative;
+  z-index: 10;
 }
 
 .imageSection {
@@ -150,7 +152,7 @@
   }
 }
 
-@media all and (max-width: 1050px){
+@media all and (max-width: 1050px) {
   .primeLocation {
     width: 95%;
     flex-direction: column;
@@ -161,7 +163,7 @@
     width: 100%;
     order: 2;
   }
-  
+
   .contentSection {
     width: 100%;
     order: 1;
@@ -173,23 +175,23 @@
     height: 351px;
   }
 
-  .flexContent{
+  .flexContent {
     margin-top: 50px;
   }
 }
 
-@media all and (max-width: 767px){
+@media all and (max-width: 767px) {
   .contentSection h1 {
     font-size: 30px;
   }
 }
 
-@media all and (max-width: 500px){
+@media all and (max-width: 500px) {
   .contentSection h1 {
     font-size: 25px;
   }
 
-  .primeLocation{
-    padding: 70px 0px;
+  .primeLocation {
+    padding: 60px 0px;
   }
 }

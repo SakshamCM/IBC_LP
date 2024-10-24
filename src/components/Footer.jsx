@@ -55,17 +55,17 @@ let Footer = () => {
             us.
           </p>
           <div className={styles.socialDiv}>
-            <a href="/">
+            <a href="https://www.facebook.com/ibcofficialmohali/">
               <div className={styles.socialIcon}>
                 <img src={facebook} />
               </div>
             </a>
-            <a href="/">
+            <a href="https://www.instagram.com/ibcofficialmohali/">
               <div className={styles.socialIcon}>
                 <img src={instagram} />
               </div>
             </a>
-            <a href="/">
+            <a href="https://www.linkedin.com/company/ibcofficial1/">
               <div className={styles.socialIcon}>
                 <img src={linkedin} />
               </div>

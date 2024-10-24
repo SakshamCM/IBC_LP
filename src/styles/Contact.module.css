@@ -17,6 +17,8 @@
   object-fit: cover;
   background-attachment: fixed;
   padding: 100px 0px;
+  position: relative;
+  z-index: 10;
 }
 
 .contact {
@@ -77,6 +79,10 @@
 
 .contactDetails * {
   color: white;
+}
+
+.contactDetails p {
+  font-size: 15px;
 }
 
 .contactDetails h1 {

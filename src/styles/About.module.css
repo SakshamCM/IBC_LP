@@ -13,7 +13,10 @@
   align-items: center;
   justify-content: space-between;
   margin: auto;
-  padding: 150px 0px;
+  padding: 80px 0px;
+  position: relative;
+  z-index: 10;
+  background-color: rgb(255, 255, 255);
 }
 
 .imageSection {
@@ -22,6 +25,7 @@
   align-items: stretch;
   justify-content: space-between;
   position: relative;
+  z-index: 5;
   top: 100px;
   opacity: 0;
   visibility: hidden;
@@ -58,6 +62,8 @@
 .contentSection {
   width: 48%;
   position: relative;
+  z-index: 10;
+  background-color: white;
   top: 100px;
   opacity: 0;
   visibility: hidden;
@@ -111,6 +117,7 @@
 .flexContent div p {
   text-align: left;
   width: 100%;
+  font-size: 16px;
 }
 
 @media all and (max-width: 1500px) {
@@ -178,7 +185,7 @@
 
 @media all and (max-width: 500px) {
   .about {
-    padding: 70px 0px 100px;
+    padding: 60px 0px 100px;
   }
 
   .contentSection h1 {

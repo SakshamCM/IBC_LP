@@ -10,8 +10,11 @@
 .whyChooseUs {
   width: 1440px;
   margin: auto;
-  padding: 150px 0px;
+  padding: 80px 0px;
   text-align: center;
+  position: relative;
+  z-index: 10;
+  background-color: white;
 }
 
 .whyChooseUs h1 {
@@ -56,6 +59,7 @@
   width: 70%;
   margin: auto;
   margin-bottom: 50px;
+  font-size: 15px;
   position: relative;
   top: 100px;
   opacity: 0;
@@ -86,6 +90,12 @@
   top: 100px;
   opacity: 0;
   visibility: hidden;
+  margin-top: 0px;
+}
+
+.whyChooseGridDiv:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  top: -20px;
 }
 
 .button {
@@ -198,16 +208,16 @@
   }
 }
 
-@media all and (max-width: 500px){
-  .whyChooseUs{
-    padding: 70px 0px;
+@media all and (max-width: 500px) {
+  .whyChooseUs {
+    padding: 60px 0px;
   }
-  
+
   .whyChooseUs h1 {
     font-size: 25px;
   }
 
-  .whyChooseUs p{
+  .whyChooseUs p {
     width: 100%;
   }
 }

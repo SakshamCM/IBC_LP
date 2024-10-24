@@ -1,11 +1,13 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState, useEffect, useContext } from "react";
 import styles from "../styles/About.module.css";
 import BlueButton from "./BlueButton";
 import about1 from "../assets/about1.jpg";
 import about2 from "../assets/about2.jpg";
 import about3 from "../assets/about3.jpg";
+import { AuthContext } from "../context/AuthContentProvider";
 
 let About = () => {
+  let [showForm, setShowForm] = useContext(AuthContext);
   let aboutRef = useRef(null);
   let [isFirstView, setIsFirstView] = useState(false);
 

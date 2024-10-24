@@ -13,7 +13,10 @@
   align-items: stretch;
   justify-content: space-between;
   margin: auto;
-  padding: 150px 0px;
+  padding: 80px 0px;
+  position: relative;
+  z-index: 10;
+  background-color: white;
 }
 
 .imageSection {
@@ -28,7 +31,7 @@
   visibility: hidden;
 }
 
-.imageSection.animationSection {
+.imageSection.showAnimationSection {
   transition-delay: 0.4s;
   top: 0;
   opacity: 1;
@@ -63,8 +66,8 @@
   visibility: hidden;
 }
 
-.contentSection.animationSection {
-  transition-delay: 0.4s;
+.contentSection.showAnimationSection {
+  transition-delay: 0.2s;
   top: 0;
   opacity: 1;
   visibility: visible;
@@ -170,6 +173,6 @@
   }
 
   .primeLocation {
-    padding: 70px 0px;
+    padding: 60px 0px;
   }
 }

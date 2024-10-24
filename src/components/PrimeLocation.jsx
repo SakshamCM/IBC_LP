@@ -54,9 +54,10 @@ let PrimeLocation = () => {
               business connectivity.
             </p>
             <p className={styles.aboutDesc}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-              odio deleniti adipisci accusantium perferendis minima itaque quod
-              aliquam impedit totam?
+              IBC's strategic position fosters collaboration and innovation,
+              attracting a diverse range of businesses. This accessibility not
+              only enhances logistics but also encourages partnerships that
+              drive growth and competitiveness in the market.
             </p>
             <div className={styles.flexContent}>
               <div>

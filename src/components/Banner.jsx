@@ -1,6 +1,7 @@
 import styles from "../styles/Banner.module.css";
 import banner from "../assets/banner2.jpg";
 import { useState, useEffect, useRef } from "react";
+import BlueButton from "./BlueButton";
 
 let Banner = () => {
   let [name, setName] = useState("");
@@ -36,20 +37,28 @@ let Banner = () => {
   }, []);
   return (
     <div
+      id="home"
       className={styles.banner}
       style={{
         backgroundImage: `linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(${banner})`,
       }}
     >
       <div className={styles.bannerMain} ref={aboutRef}>
-        <div className={styles.bannerContentSection}>
-          <h1>Lorem ipsum dolor sit amet.</h1>
-          <h1>Lorem ipsum dolor sit amet.</h1>
+        <div
+          className={`${styles.bannerContentSection} ${
+            styles.animationSection
+          } ${isFirstView ? styles.showAnimationSection : ""}`}
+        >
+          <h1>
+            <span>IBC:</span> Building Tomorrow's Community Today
+          </h1>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad,
-            voluptas non autem temporibus ducimus velit explicabo molestias ipsa
-            omnis dolor.
+            IBC is dedicated to creating thriving, sustainable townships that
+            blend modern living with community values, offering residents a
+            harmonious environment where innovation, connectivity, and quality
+            of life flourish.
           </p>
+          <BlueButton text={"Enquire Now"} />
         </div>
         <div
           className={`${styles.bannerFormSection} ${styles.animationSection} ${
