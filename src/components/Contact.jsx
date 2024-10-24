@@ -1,14 +1,45 @@
 import styles from "../styles/Contact.module.css";
 import bg from "../assets/contact.jpg";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useContext } from "react";
+import { ToastContainer, toast, Bounce } from "react-toastify";
+import { AuthContext } from "../context/AuthContentProvider";
 
 let Contact = () => {
+  let [showForm, setShowForm, showWaitingLoading, setShowWaitingLoading] =
+    useContext(AuthContext);
   let [name, setName] = useState("");
   let [email, setEmail] = useState("");
   let [message, setMessage] = useState("");
 
   let aboutRef = useRef(null);
   let [isFirstView, setIsFirstView] = useState(false);
+  const notifySuccess = () => {
+    toast.success("Form Submitted Successfully", {
+      position: "top-center",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+      transition: Bounce,
+    });
+  };
+
+  const notifyError = () => {
+    toast.error("Please try again later.", {
+      position: "top-center",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+      transition: Bounce,
+    });
+  };
 
   useEffect(() => {
     let observer = new IntersectionObserver(
@@ -34,7 +65,39 @@ let Contact = () => {
     };
   }, []);
 
-  let FormHandler = () => {};
+  const FormHandler = async (e) => {
+    setShowWaitingLoading(true);
+    e.preventDefault();
+
+    try {
+      const response = await fetch(
+        "https://ibc-nodemailer.onrender.com/send-email",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            from: email,
+            to: "creativemonktesting@gmail.com",
+            subject: "Contact Form Submission",
+            text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
+          }),
+        }
+      );
+
+      if (response.ok) {
+        notifySuccess();
+        setShowWaitingLoading(false);
+      } else {
+        setShowWaitingLoading(false);
+        notifyError();
+      }
+    } catch (error) {
+      notifyError();
+      setShowWaitingLoading(false);
+    }
+  };
   return (
     <div
       ref={aboutRef}

@@ -1,13 +1,77 @@
 import styles from "../styles/Banner.module.css";
 import banner from "../assets/banner2.jpg";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useContext } from "react";
+import { ToastContainer, toast, Bounce } from "react-toastify";
+import { AuthContext } from "../context/AuthContentProvider";
 import BlueButton from "./BlueButton";
 
 let Banner = () => {
+  let [showForm, setShowForm, showWaitingLoading, setShowWaitingLoading] =
+    useContext(AuthContext);
+  const notifySuccess = () => {
+    toast.success("Form Submitted Successfully", {
+      position: "top-center",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+      transition: Bounce,
+    });
+  };
+
+  const notifyError = () => {
+    toast.error("Please try again later.", {
+      position: "top-center",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+      transition: Bounce,
+    });
+  };
+
   let [name, setName] = useState("");
   let [email, setEmail] = useState("");
   let [message, setMessage] = useState("");
-  let FormHandler = () => {};
+  const FormHandler = async (e) => {
+    setShowWaitingLoading(true);
+    e.preventDefault();
+
+    try {
+      const response = await fetch(
+        "https://ibc-nodemailer.onrender.com/send-email",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            from: email,
+            to: "creativemonktesting@gmail.com",
+            subject: "Contact Form Submission",
+            text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
+          }),
+        }
+      );
+
+      if (response.ok) {
+        notifySuccess();
+        setShowWaitingLoading(false);
+      } else {
+        setShowWaitingLoading(false);
+        notifyError();
+      }
+    } catch (error) {
+      notifyError();
+      setShowWaitingLoading(false);
+    }
+  };
 
   let aboutRef = useRef(null);
   let [isFirstView, setIsFirstView] = useState(false);

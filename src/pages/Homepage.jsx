@@ -9,10 +9,12 @@ import PlotSizes from "../components/PlotSizes";
 import PrimeLocation from "../components/PrimeLocation";
 import Surroundings from "../components/Surroundings";
 import WhyChooseUs from "../components/WhyChooseUs";
+import { ToastContainer, toast, Bounce } from "react-toastify";
 
 let Homepage = () => {
   return (
     <>
+      <ToastContainer />
       <Navbar />
       <Banner />
       <About />

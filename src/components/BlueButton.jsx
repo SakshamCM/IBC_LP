@@ -3,10 +3,15 @@ import { AuthContext } from "../context/AuthContentProvider";
 import styles from "../styles/BlueButton.module.css";
 
 let BlueButton = (props) => {
-  let [showForm, setShowForm] = useContext(AuthContext);
+  let [showForm, setShowForm, setShowLoading] = useContext(AuthContext);
   let { text } = props;
   return (
-    <button className={styles.blueButton} onClick={() => setShowForm(true)}>
+    <button
+      className={styles.blueButton}
+      onClick={() => {
+        setShowForm(true);
+      }}
+    >
       {text}
     </button>
   );
